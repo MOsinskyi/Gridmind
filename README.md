@@ -1,3 +1,7 @@
+<p align="center"><img src="/docs/images/logo-512x512.png" width="128"></p>
+
+
+
 # Gridmind
 
 _Charge wisely. Sell at the right time._
