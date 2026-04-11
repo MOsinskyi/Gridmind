@@ -1,7 +1,6 @@
-from fastapi import FastAPI
 import uvicorn
-
 from core.config import settings
+from fastapi import FastAPI
 
 app = FastAPI(**settings.app.model_dump(exclude={"host", "port"}))
 
