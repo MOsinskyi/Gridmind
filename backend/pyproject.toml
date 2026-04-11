@@ -72,11 +72,13 @@ docstring-code-line-length = "dynamic"
 
 [tool.pytest.ini_options]
 addopts = "--cov=. --cov-report=term-missing --cov-report=xml"
-# exit code 5 (no tests) is acceptable while the test suite is being built
+
 filterwarnings = ["ignore::pytest_cov.plugin.CovReportWarning"]
 
 [tool.coverage.run]
 omit = [
     ".venv/*",
     "__pycache__/*",
+    "**/__init__.py",
+    "**/config.py",
 ]
