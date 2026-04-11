@@ -1,7 +1,9 @@
 <p align="center"><img src="/docs/images/logo-512x512.png" width="128" alt="Gridmind logo"></p>
 
-<p align="center"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/MOsinskyi/Gridmind/ci.yml?style=for-the-badge"></p>
-<p align="center"><img alt="Codecov (with branch)" src="https://img.shields.io/codecov/c/github/MOsinskyi/Gridmind/dev?style=for-the-badge"></p>
+<p align="center">
+<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/MOsinskyi/Gridmind/ci.yml?style=for-the-badge">
+<img alt="Codecov (with branch)" src="https://img.shields.io/codecov/c/github/MOsinskyi/Gridmind/dev?style=for-the-badge">
+</p>
 
 
 # Gridmind
