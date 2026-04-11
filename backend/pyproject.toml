@@ -5,10 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi[standart]>=0.135.3",
+    "fastapi[standard]>=0.135.3",
     "pydantic-settings>=2.13.1",
-    "ruff>=0.15.10",
     "uvicorn>=0.44.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.15.10",
 ]
 
 [tool.ruff]
@@ -67,3 +73,16 @@ line-ending = "auto"
 docstring-code-format = false
 
 docstring-code-line-length = "dynamic"
+
+[tool.pytest.ini_options]
+addopts = "--cov=. --cov-report=term-missing --cov-report=xml"
+
+filterwarnings = ["ignore::pytest_cov.plugin.CovReportWarning"]
+
+[tool.coverage.run]
+omit = [
+    ".venv/*",
+    "__pycache__/*",
+    "**/__init__.py",
+    "**/config.py",
+]
