@@ -8,7 +8,9 @@ _Charge wisely. Sell at the right time._
 2. [Getting appId and appSecret](#getting-appid-and-appsecret)
 3. [Run locally with Docker](#run-locally-with-docker)
    - [Prerequisites](#0-prerequisites)
-4. [Usecase](#use-case-diagram)
+   - [Run docker container](#1-run-docker-container)
+   - [Access the application](#2-access-the-application)
+4. [Use-case Diagram](#use-case-diagram)
 5. [Entity Relationship Diagram](#entity-relationship-diagram)
 
 ## Overview
@@ -37,6 +39,19 @@ We're working with the official [Deye API](https://developer.deyecloud.com/api).
 - You have a Deye account.
 - A properly configured environment file `.env` according
 to file `.env.template` inside `backend/` directory.
+
+### 1. Run docker container
+
+You can run the application with docker-compose: 
+
+```shell
+docker compose -f docker-compose.dev.yml up -d
+```
+
+### 2. Access the application
+
+Once the application build was completed, you can access the application at [`http://localhost:5173`](http://localhost:5173).
+The Swagger documentation is available at [`http://localhost:8000/docs`](http://localhost:8000/docs).
 
 
 ## Use-case diagram
