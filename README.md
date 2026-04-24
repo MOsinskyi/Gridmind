@@ -1,5 +1,5 @@
 <p align="center"><img src="/docs/images/logo-512x512.png" width="128" alt="Gridmind logo"></p>
-<h1 align="center">Gridmind</h1>
+<h1 align="center">GridMind</h1>
 <p align="center">Charge wisely. Sell at the right time</p>
 
 <p align="center">
@@ -58,6 +58,10 @@ docker compose -f docker-compose.dev.yml up -d
 Once the application build was completed, you can access the application at [`http://localhost:5173`](http://localhost:5173).
 The Swagger documentation is available at [`http://localhost:8000/docs`](http://localhost:8000/docs).
 
+
+## Information architecture
+
+![information-architecture](/docs/images/information-architecture.png)
 
 ## Use-case diagram
 
